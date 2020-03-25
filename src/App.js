@@ -1,24 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import Header from '../src/components/Header';
+import BlockLinks from '../src/components/BlockLinks';
+import Divisor from '../src/components/Divisor';
+
+import {
+  dataAdministrativos,
+  dataOperacional,
+  dataOutros
+} from './database/linkList';
+
+import GlobalStyles from '../src/styles/global';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Divisor title="Administrativo" />
+      <BlockLinks data={dataAdministrativos} />
+      <Divisor title="Operacional" />
+      <BlockLinks data={dataOperacional} />
+      <Divisor title="Outros" />
+      <BlockLinks data={dataOutros} />
+      <GlobalStyles />
     </div>
   );
 }
