@@ -7,6 +7,7 @@ import protocolo from '../assets/sync-white-18dp.svg';
 import ponto from '../assets/alarm-white-18dp.svg';
 import sofc from '../assets/account_balance-white-18dp.svg';
 import solar from '../assets/important_devices-white-18dp.svg';
+import certidoes from '../assets/library_books-white-18dp.svg';
 
 export const dataAdministrativos = [
   {
@@ -29,6 +30,12 @@ export const dataAdministrativos = [
     href: 'https://protocolo.mprn.mp.br/',
     src: protocolo,
     title: 'Protocolo'
+  },
+  {
+    href: null,
+    src: certidoes,
+    title: 'Certidões',
+    onclick: true
   }
 ];
 

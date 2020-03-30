@@ -1,5 +1,14 @@
 import styled from 'styled-components';
 
+export const Group = styled.div`
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
 export const Container = styled.div`
   padding: 20px 100px;
   display: flex;
@@ -13,14 +22,15 @@ export const Container = styled.div`
   }
 `;
 
-export const Badge = styled.a`
+export const Badge = styled.button`
+  background: none;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
-  cursor: pointer;
 
   @media (max-width: 768px) {
-    margin-top: 30px;
+    margin-top: 0px;
   }
 
   > img {
@@ -33,7 +43,6 @@ export const Badge = styled.a`
   }
 
   > span {
-    color: rgba(0, 0, 0, 0.5);
     font-weight: bold;
   }
 `;
