@@ -17,7 +17,6 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Certidoes />
       <Divisor title="Administrativo" />
       <BlockLinks data={dataAdministrativos} />
       <Divisor title="Operacional" />
