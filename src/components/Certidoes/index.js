@@ -18,11 +18,8 @@ export default function Certidoes() {
     //   }
     // );
 
-    const response = await api.get('http://mprn.mp.br/portal/', {
-      headers: {
-        'Access-Control-Allow-Origin': 'http://localhost:3000'
-      }
-    });
+    const response = await api.get('localhost:3333/2');
+
     console.log(response);
   }
 
