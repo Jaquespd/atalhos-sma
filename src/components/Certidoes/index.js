@@ -4,21 +4,7 @@ import api from '../../services/api';
 
 export default function Certidoes() {
   async function handleOpenPages() {
-    // const response = await api.get(
-    //   'https://servicos.receita.fazenda.gov.br/Servicos/certidao/CndConjuntaInter/InformaNICertidao.asp?Tipo=1',
-    //   {
-    //     headers: {
-    //       'Access-Control-Allow-Origin': 'http://localhost:3000',
-    //       'Access-Control-Allow-Credentials': 'true',
-    //       'Access-Control-Allow-Methods':
-    //         'GET, POST, PATCH, PUT, DELETE, OPTIONS',
-    //       'Access-Control-Allow-Headers': 'Origin, Content-Type, X-Auth-Token',
-    //       'Access-Control-Max-Age': '86400'
-    //     }
-    //   }
-    // );
-
-    const response = await api.get('localhost:3333/2');
+    const response = await api.get('/');
 
     console.log(response);
   }
