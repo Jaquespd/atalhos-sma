@@ -8,7 +8,7 @@ import Certidoes from '../src/components/Certidoes';
 import {
   dataAdministrativos,
   dataOperacional,
-  dataOutros
+  dataOutros,
 } from './database/linkList';
 
 import GlobalStyles from '../src/styles/global';
@@ -17,7 +17,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Certidoes />
+      {/* <Certidoes /> */}
       <Divisor title="Administrativo" />
       <BlockLinks data={dataAdministrativos} />
       <Divisor title="Operacional" />

@@ -13,59 +13,64 @@ export const dataAdministrativos = [
   {
     href: 'http://protocoloweb.mprn.mp.br/',
     src: search,
-    title: 'Consulta de Processos'
+    title: 'Consulta de Processos',
   },
   {
     href:
       'https://almoxarifado.mprn.mp.br/logonsetor.aspx?dt=24/03/2020%2019:49:10',
     src: almoxarifado,
-    title: 'Almoxarifado'
+    title: 'Almoxarifado',
   },
   {
     href: 'https://sofc.mprn.mp.br/sofc2020/',
     src: sofc,
-    title: 'SOFC'
+    title: 'SOFC',
+  },
+  {
+    href: 'https://emp.mprn.mp.br/',
+    src: protocolo,
+    title: 'E-MP',
   },
   {
     href: 'https://protocolo.mprn.mp.br/',
     src: protocolo,
-    title: 'Protocolo'
+    title: 'Protocolo',
   },
   {
     href: null,
     src: certidoes,
     title: 'Certidões',
-    onclick: true
-  }
+    onclick: true,
+  },
 ];
 
 export const dataOperacional = [
   {
     href: 'https://atendemp.mprn.mp.br/otrs/index.pl',
     src: mopa,
-    title: 'AtendeMP'
+    title: 'AtendeMP',
   },
 
   {
     href: 'https://mopa-2f790.firebaseapp.com/',
     src: mopa,
-    title: 'MOPA'
+    title: 'MOPA',
   },
   {
     href: 'https://monitoramento.sicessolar.com.br/',
     src: solar,
-    title: 'Energia Solar'
+    title: 'Energia Solar',
   },
   {
     href: 'https://www.isolarcloud.com/',
     src: solar,
-    title: 'Energia Solar'
+    title: 'Energia Solar',
   },
   {
     href: 'https://srv-zabbix.mprn.mp.br/',
     src: solar,
-    title: 'Status da Rede'
-  }
+    title: 'Status da Rede',
+  },
 ];
 
 export const dataOutros = [
@@ -73,16 +78,16 @@ export const dataOutros = [
     href:
       'https://docs.google.com/spreadsheets/d/e/2PACX-1vRfZ08qGTJYoWJFTqdUpjAIpBwE977ekYtQoV8os-OdkhoaR5A6-OsYfhq3Alo85wULUt9u8IJGaUkL/pubhtml',
     src: telefone,
-    title: 'Telefones'
+    title: 'Telefones',
   },
   {
     href: 'https://intranet.mp.rn.gov.br/ponto/ponto.aspx',
     src: ponto,
-    title: 'Espelho do Ponto'
+    title: 'Espelho do Ponto',
   },
   {
-    href: 'https://correio.mp.rn.gov.br/',
+    href: 'https://gmail.com/',
     src: email,
-    title: 'Email'
-  }
+    title: 'Email',
+  },
 ];
